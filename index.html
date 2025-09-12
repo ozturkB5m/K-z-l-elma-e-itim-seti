@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kızılelma Anaokulu Kitap Seti</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Poppins', sans-serif; }
+  
+</style>
+<style>
+    ul.custom-list {
+      list-style-type: disc; /* dolu yuvarlak işaret */
+      padding-left: 20px;
+    }
+    ul.custom-list li {
+      margin-bottom: 5px;
+    }
+  </style>
+<style>
+  /* İsteğe bağlı: zoom reset için */
+      .zoomed {
+        transform: scale(1.5); /* %150 büyütme */
+        cursor: zoom-out;      /* Zoom out ikonu */
+      }
+ </style>
+</head>
+<body class="bg-[url('https://images.unsplash.com/photo-1611599539768-c6ed2f9b0eeb?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center">
+
+<!-- Header -->
+<header class="relative z-10 bg-green-900 bg-opacity-90 text-white py-6 shadow-lg">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+    <div class="flex items-center mb-4 md:mb-0">
+      <img src="File.jpg" alt="Set Logo" class="w-32 h-32 mr-4 rounded-full border-2 border-white shadow-md">
+      <div>
+        <h1 class="text-2xl font-bold">Benim Kızılelmam</h1>
+        <p class="text-xs md:text-sm opacity-90"> Köklerinden beslenerek, geleceğe yön veren bir nesil için</p>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-3">
+            <a href="https://wa.me/905382061020" target="_blank" class="bg-green-700 hover:bg-green-600 text-white font-semibold py-2 px-3 rounded-lg flex items-center gap-2 transition-all text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.8 11.8 0 0 0 12 0C5.373 0 0 5.373 0 12a11.95 11.95 0 0 0 2.52 7.48l-1.42 5.2 5.32-1.4A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12a11.8 11.8 0 0 0-3.48-8.52Z"/></svg>
+        WhatsApp
+      </a>
+      <p class="font-semibold text-xs lg:text-sm whitespace-nowrap">📞 0538 206 1020</p>
+    </div>
+  </div>
+</header>
+
+<!-- Set Tanıtımı -->
+<section class="relative z-10 max-w-6xl mx-auto mt-8 px-6 py-6 rounded-3xl"
+  style="background: linear-gradient(135deg, #fef9f0, #d1e7dd); box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+
+  <!-- Başlık ortalanmış -->
+  <h2 class="text-3xl font-bold mb-8 text-center"
+      style="background: linear-gradient(135deg, #0b3d2e, #116466, #1e6f5c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+    Benim Kızılelmam<br>Okul Öncesi Eğitim Seti
+  </h2>
+
+  <!-- Metin ve resim float ile -->
+  <div class="flex flex-col md:flex-row items-start text-green-900 text-sm leading-relaxed gap-4">
+    <img src="D.png"
+         alt="Kitap Seti"
+         class="w-60 h-60 rounded-xl object-cover flex-shrink-0">
+
+    <div class="lg:columns-2 lg:gap-8">
+      <p class="[text-indent:1em] font-bold italic mb-2">Yolculuğa çıkacağımız Kıymetli Eğitmenlerimize;
+      </p>
+
+      <p class="[text-indent:2em]">
+         Bu kitap setimizi, tertemiz bir İslam fıtratı üzerine yaratılan ve bizlere emanet edilen minik sultanlarımız için hazırladık. Bu vesileyle varlığın yaratılış amacını öğrenip bütün kâinatın kendisine hizmet için yaratıldığını bilip Yaradan’a her bir zerresiyle şükretmelerini istedik.  
+        Sarsılmaz bir inancı, köklü bir muhabbeti, istikrarlı çalışkanlığı, her koşulda dürüstlüğü, ruh ve beden dünyalarına nakşetmek istedik. Mevlevi ve Gazali eğitim usullerinden birçok esası harmanlayarak; Sultani Eğitim Usulü ile minik sultanlarımıza eşsiz bir hazine hazırladık.
+      </p>
+
+      <p>
+        <strong>“Her Anımda Peygamberim” </strong> kitabında Kur’an’dan ve hadisten yol haritaları çizdik.  <strong>“Çiziyorum”da  </strong> bir ÇİZİMden bir âleme geçiş yaptık. Tüm kavramları, içinde yaş ve kuru her şeyin bulunduğu Kur’an’ımızdan aldık.  
+        Helal ve temizinden yemeyi  <strong>“Emine ve Feride’nin Mutfağı”ndan </strong> öğrenirken “Ekoloji Atölyesi”nde sevgiyle bir tohumdan çıkacak mucizeye tanık olsunlar ve gördüğü her şeyden Rabbimize giden bir yol bulsunlar istedik.  
+        Dedesi Fatih Sultan gibi âlim, âbid ve mücahit olsunlar; abisi Selçuk Bayraktar gibi ümmeti gaflet uykusundan uyandırarak içindeki cevheri buldurup özüne döndürsünler diye niyet ettik.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Kart -->
+<section class="relative z-10 max-w-3xl mx-auto mt-12 px-6">
+  <div class="faq-card border border-gray-200 rounded-3xl shadow-lg overflow-hidden cursor-pointer transition">
+    <!-- Başlık: Tıklanınca açılır/kapanır -->
+    <div class="faq-header bg-green-50 px-6 py-4">
+      <h2 class="text-xl font-bold text-green-900 text-center">Sık Sorulan Sorular</h2>
+    </div>
+
+    <!-- İçerik: Başlangıçta gizli -->
+    <div class="faq-content max-h-0 overflow-hidden px-6 transition-all duration-300">
+      <div class="py-4 text-black space-y-3">
+<style>
+  ul.custom-list {
+    list-style-type: disc; /* dolu yuvarlak işaret */
+    padding-left: 20px;
+  }
+  ul.custom-list li {
+    margin-bottom: 5px;
+  }
+</style>
+
+<p><strong>Soru 1:</strong> Eğitim setiniz hangi yaş gruplarına uygundur?</p>
+<p><em>Cevap:</em> +3 yaş, +∞. Okula başladığı ilk anda edinmeye başlayacağı bu bilgilerden, sonsuzluk yolculuğunda da istifade etmesi umulmaktadır.</p>
+
+<p><strong>Soru 2:</strong> Setlerin içinde hangi materyaller bulunuyor?</p>
+<p><em>Cevap:</em> Setin içinde 18 kitap, 2 takım kart materyali bulunmaktadır:</p>
+<ul class="custom-list">
+  <li>Elifba oyun kartları</li>
+  <li>Kur’ân’da geçen bitki ve hayvanlarla ilgili bilmece kartları</li>
+</ul>
+
+<p><strong>Soru 3:</strong> Eğitim setiniz MEB müfredatına uygun mu?</p>
+<p><em>Cevap:</em> Evet. Maarif Modeli’nin erdem–değer–eylem yaklaşımı ile örtüşmektedir. Ayrıca tüm kitaplarımız multidisipliner yaklaşımla hazırlanmıştır.</p>
+
+<p><strong>Soru 4:</strong> İçerikler uzmanlar tarafından mı hazırlandı?</p>
+<p><em>Cevap:</em> Evet, tüm kitaplar alanındaki uzman eğitimciler tarafından hazırlanmıştır.</p>
+
+<p><strong>Soru 5:</strong> Eğitim seti sadece okullara mı, bireysel ailelere de uygun mu?</p>
+<p><em>Cevap:</em> Her ikisi için de kullanıma uygundur.</p>
+
+<p><strong>Soru 6:</strong> Bu kitap setini yayınevimiz aracılığıyla satabilir miyiz?</p>
+<p><em>Cevap:</em> Evet. Yayınevleriyle iş birliği yaparak kitabımızın dağıtımını ve satışını desteklemekten memnuniyet duyarız.</p>
+
+<p><strong>Soru 7:</strong> Kitap setinin fiyatı nedir ve kitapları ayrı ayrı alabilir miyiz?</p>
+<p><em>Cevap:</em> Kitap setimiz bütün bir set olarak 1800 TL'ye alınabilir. Parça parça satışımız mevcut bulunmamaktadır.</p>
+
+<p><strong>Soru 8:</strong> Nasıl sipariş verebilirim?</p>
+<p><em>Cevap:</em> Sitede yer alan iletişim numarasından sipariş oluşturabilirsiniz.</p>
+
+<p><strong>Soru 9:</strong> Ürün iadesi mümkün mü?</p>
+<p><em>Cevap:</em> Hayır.</p>
+
+<p><strong>Soru 10:</strong> Hasarlı ürün çıkarsa ne yapmalıyım?</p>
+<p><em>Cevap:</em> Elinize ulaştığı ilk anda iletişim numaramıza bilgi verebilirsiniz.</p>
+
+<p><strong>Soru 11:</strong> Size nasıl ulaşabilirim?</p>
+<p><em>Cevap:</em> Sitede bulunan iletişim numaramızdan ulaşabilirsiniz.</p>
+
+<p><strong>Soru 12:</strong> Kurumsal toplu alımlarda indirim yapıyor musunuz?</p>
+<p><em>Cevap:</em> Evet. İletişim numarasından bilgi alabilirsiniz.</p>
+
+<p><strong>Soru 13:</strong> Eğitim seti hangi becerileri destekliyor?</p>
+<p><em>Cevap:</em></p>
+<ul class="custom-list">
+  <li>Manevi, sosyal ve duygusal</li>
+  <li>Dil ve iletişim</li>
+  <li>Bilişsel ve akademik ön beceriler</li>
+  <li>Motor ve sanat becerileri</li>
+</ul>
+
+<p><strong>Soru 14:</strong> Piyasaya göre uygun fiyatlı olmasının sebebi nedir?</p>
+<p><em>Cevap:</em> Eğitim setinin varoluş amacı asla ticari olmayıp; nesillerimizin maddî-manevî hayırlarla yetiştirilerek ümmete faydalı bireyler olabilmelerine vesile olmaktır.</p>
+
+<p><strong>Soru 15:</strong> Set hangi eğitim usulleri ile hazırlanmıştır?</p>
+<p><em>Cevap:</em> Sultânî Eğitim Usulü başlığı altında:
+<ul class="custom-list">
+  <li><strong>Nebevi Usul</strong> → Soru-cevap, kıssalarla temsil ve örneklikle eğitim</li>
+  <li><strong>Kadirî & Nakşî Usulü</strong> → Atölye ve uygulamalı pratik eğitim</li>
+  <li><strong>Gazzâlî Usulü</strong> → Oyun, gözlem ve ahlâk merkezli eğitim</li>
+  <li><strong>Mevlevî Usulü</strong> → Mesnevî ve şiirle irfânî eğitim</li>
+  <li><strong>Rabbânî Usul</strong> → Mektupla nasihat ve irşad eğitimi</li>
+</ul>
+Bu usullerin harmanlanması ile hazırlanmıştır.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Kitaplar Bölümü -->
+<section class="relative z-10 max-w-6xl mx-auto mt-10 px-6">
+  <h2 class="text-2xl font-bold mb-6 text-center text-green-800">Kitaplarımız</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-3 gap-6">
+    <!-- 20 Kitap Kartı -->
+<!-- Kart 1 -->
+      <div class="bg-white rounded-3xl shadow-lg p-4 max-w-sm"
+           data-title="Adım adım Kur'anım 1"
+           data-images='["K1.jpeg","K1-1.jpeg","K1-2.jpeg","K1-3.jpeg","K1-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Adım adım Kur'anım 1</h2>
+        <img src="K1.jpeg" alt="Kitap 1 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+      </div>
+
+      <!-- Kart 2 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Adım adım Kur'anım 2"
+           data-images='["K2.jpeg","K2-1.jpeg","K2-2.jpeg","K2-3.jpeg","K2-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Adım adım Kur'anım 2</h2>
+        <img src="K2.jpeg" alt="Kitap 2 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+      </div>
+
+      <!-- Kart 3 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Esma-i Hüsna"
+           data-images='["K3.jpeg","K3-1.jpeg","K3-2.jpeg","K3-3.jpeg","K3-4.jpeg"]'>
+        <h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Esma-i Hüsna</h2>
+        <img src="K3.jpeg" alt="Kitap 3 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 4 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Ailemle Öğreniyorum"
+           data-images='["K4.jpeg","K4-1.jpeg","K4-2.jpeg","K4-3.jpeg","K4-4.jpeg"]'>
+        <h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Ailemle Öğreniyorum </h2>
+        <img src="K4.jpeg" alt="Kitap 4 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 5 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Çizi-Yorum"
+           data-images='["K5.jpeg","K5-1.jpeg","K5-2.jpeg","K5-3.jpeg","K5-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Çizi-Yorum</h2>
+        <img src="K5.jpeg" alt="Çizi-Yorum Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+      </div>
+
+      <!-- Kart 6 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Her halim İlm-i Hâlim"
+           data-images='["K6.jpeg","K6-1.jpeg","K6-2.jpeg","K6-3.jpeg","K6-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Her halim İlm-i Hâlim</h2>
+        <img src="K6.jpeg" alt="Kitap 6 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+              </div>
+
+      <!-- Kart 7 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Her Anımda Peygamberim"
+           data-images='["K7.jpeg","K7-1.jpeg","K7-2.jpeg","K7-3.jpeg","K7-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Her Anımda Peygamberim</h2>
+        <img src="K7.jpeg" alt="Kitap 7 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+     </div>
+
+      <!-- Kart 8 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Kalbimin Nuru"
+           data-images='["K8.jpeg","K8-1.jpeg","K8-2.jpeg","K8-3.jpeg","K8-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Kalbimin Nuru</h2>
+        <img src="K8.jpeg" alt="Kitap 8 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+      </div>
+
+      <!-- Kart 9 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Emine ve Feride'nin Mutfağı"
+           data-images='["K9.jpeg","K9-1.jpeg","K9-2.jpeg","K9-3.jpeg","K9-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Emine ve Feride'nin Mutfağı</h2>
+        <img src="K9.jpeg" alt="Kitap 9 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 10 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Yağmur ve Toprak'ın Ekoloji Atölyesi"
+           data-images='["K10.jpeg","K10-1.jpeg","K10-2.jpeg","K10-3.jpeg","K10-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Yağmur ve Toprak'ın Ekoloji Atölyesi</h2>
+        <img src="K10.jpeg" alt="Kitap 10 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 11 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Muhammed ve Emin'in Kodlama Atölyesi"
+           data-images='["K11.jpeg","K11-1.jpeg","K11-2.jpeg","K11-3.jpeg","K11-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Muhammed ve Emin'in Kodlama Atölyesi</h2>
+        <img src="K11.jpeg" alt="Kitap 11 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 12 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Sayı-Yorum"
+           data-images='["K12.jpeg","K12-1.jpeg","K12-2.jpeg","K12-3.jpeg","K12-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Sayı-Yorum</h2>
+        <img src="K12.jpeg" alt="Kitap 12 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+              </div>
+
+      <!-- Kart 13 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Ezberli-Yorum"
+           data-images='["K13.jpeg","K13-1.jpeg","K13-2.jpeg","K13-3.jpeg","K13-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Ezberli-Yorum</h2>
+        <img src="K13.jpeg" alt="Kitap 13 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 14 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Kavrı-Yorum"
+           data-images='["K14.jpeg","K14-1.jpeg","K14-2.jpeg","K14-3.jpeg","K14-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Kavrı-Yorum</h2>
+        <img src="K14.jpeg" alt="Kitap 14 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+              </div>
+
+      <!-- Kart 15 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="İcatçı Mucit"
+           data-images='["K15.jpeg","K15-1.jpeg","K15-2.jpeg","K15-3.jpeg","K15-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">İcatçı Mucit</h2>
+        <img src="K15.jpeg" alt="Kitap 15 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+
+      </div>
+
+      <!-- Kart 16 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Hay Hay Higher Up"
+           data-images='["K16.jpeg","K16-1.jpeg","K16-2.jpeg","K16-3.jpeg","K16-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Hay Hay Higher Up</h2>
+        <img src="K16.jpeg" alt="Kitap 16 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+        
+      </div>
+
+      <!-- Kart 17 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Bildirmeceler"
+           data-images='["K17.jpeg","K17-1.jpeg","K17-2.jpeg","K17-3.jpeg","K17-4.jpeg"]'>
+	<h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Bildirmeceler</h2>
+        <img src="K17.jpeg" alt="Kitap 17 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+     
+      </div>
+
+      <!-- Kart 18 -->
+      <div class="bg-white rounded-2xl shadow-lg p-4 max-w-sm"
+           data-title="Deni-Yorum"
+           data-images='["K18.jpeg","K18-1.jpeg","K18-2.jpeg","K18-3.jpeg","K18-4.jpeg"]'>
+        <h2 class="text-lg font-semibold mt-3 text-blue-400 text-center">Deni-Yorum</h2>
+        <img src="K18.jpeg" alt="Kitap 18 Kapağı" class="rounded-xl cursor-pointer" onclick="openModal(this)" />
+      </div>
+
+    </div>
+
+</section>
+
+<!-- Alt Bölüm: Kurum ve Hemen Sipariş -->
+<section id="siparis" class="relative max-w-3xl mx-auto mt-10 px-6 py-8 bg-white rounded-3xl shadow-lg z-10">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="text-center md:text-left">
+      <img src="Logo.jpg" alt="Kurum Logo" class="mx-auto md:mx-0 w-32 h-32 rounded-full border-2 border-green-800 mb-2">
+      <h3 class="text-lg font-bold mb-1 text-green-900"> Sultan İlim Eğitim </h3>
+      <p class="text-gray-700 text-xs mb-1">Adres: Nuripaşa mahallesi, 14. sokak, no: 1/A Zeytinburnu/İstanbul, Türkiye</p>
+      <p class="text-gray-700 text-xs mb-1">Web: <a href="www.sultanbabavakfi.org.tr" target="https://www.sultanbabavakfi.org.tr/" class="text-green-700 underline">sultanbabavakfi.org.tr</a></p>
+      <a href="https://wa.me/905382061020" target="_blank" class="bg-green-700 hover:bg-green-600 text-white font-semibold py-2 px-5 rounded-full transition text-sm inline-flex items-center gap-2 mt-2">
+        WhatsApp ile Hemen Sipariş
+      </a>
+    </div>
+    <div class="text-center md:text-right">
+      <p class="text-gray-700 text-xs mb-1">Sorularınız için bizi arayabilirsiniz:</p>
+      <a href="https://wa.me/905382061020" target="_blank" class="bg-green-800 hover:bg-green-700 text-white font-semibold py-2 px-5 rounded-full transition text-sm inline-flex items-center gap-2">
+        📞 0538 206 1020
+      </a>
+    </div>
+  </div>
+</section>
+
+ <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+      <div class="relative bg-white rounded-xl p-6 max-w-2xl w-full flex flex-col items-center gap-4">
+        
+        <!-- Kapatma Butonu -->
+        <button 
+          class="absolute top-3 right-3 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center text-xl font-bold hover:bg-red-700"
+          onclick="closeModal()"
+        >
+          ✕
+        </button>
+        
+        <!-- Başlık -->
+        <h2 id="modalTitle" class="text-xl text-blue-400 font-semibold text-center"></h2>
+        <!-- Görsel -->
+        <img id="modalImage" src="" class="rounded-lg max-h-[75vh] mx-auto  transition-transform duration-300 cursor-zoom-in"/>
+
+        <!-- Navigasyon -->
+        <div class="flex gap-6 mt-4">
+          <button class="w-12 h-12 bg-green-800 text-white font-bold text-3xl leading-none rounded-full flex items-center justify-center hover:bg-green-600" onclick="prevImage()">❮</button>
+          <button class="w-12 h-12 bg-green-800 text-white font-bold text-3xl leading-none rounded-full flex items-center justify-center hover:bg-green-600" onclick="nextImage()">❯</button>
+        </div>
+      </div>
+    </div>
+
+<script>
+  // Sadece başlığa tıklanınca aç/kapa
+  document.querySelectorAll('.faq-card .faq-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+    <script>
+      let currentImages = [];
+      let currentIndex = 0;
+
+      function openModal(el) {
+        const card = el.closest("div");
+        currentImages = JSON.parse(card.getAttribute("data-images"));
+        currentIndex = 0;
+        document.getElementById("modal").classList.remove("hidden");
+        document.getElementById("modalImage").src = currentImages[currentIndex];
+        document.getElementById("modalTitle").textContent = card.getAttribute("data-title");
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        document.getElementById("modalImage").src = currentImages[currentIndex];
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        document.getElementById("modalImage").src = currentImages[currentIndex];
+      }
+      // Mevcut script içine ekle
+      const modalImg = document.getElementById("modalImage");
+
+      modalImg.addEventListener("click", toggleZoom);
+
+      function toggleZoom() {
+        modalImg.classList.toggle("zoomed");
+      }
+
+    </script>
+
+</body>
+</html>
